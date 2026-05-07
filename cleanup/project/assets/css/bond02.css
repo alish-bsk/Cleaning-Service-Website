@@ -1,0 +1,17 @@
+.bond-promisedwn.ms-extra{
+
+    margin-left:19rem;
+}
+
+.bond-promiseup.ms-extra{
+
+   margin-left:8rem;
+}
+
+.container-promise{
+    background-color: rgba(224, 248, 11, 0.112);
+    width:100%;
+    border-radius: 40px;         /* rounded corners */
+
+    
+}

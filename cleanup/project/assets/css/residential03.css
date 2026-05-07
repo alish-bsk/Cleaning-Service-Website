@@ -1,0 +1,86 @@
+.img-frontop{
+    width:1300px;
+    height:400px;
+    box-shadow: 0 4px 10px rgba(0,0,0,5); 
+
+}
+
+
+.container-imgtop.ms-extra,.container-imgtop.mt-extra{
+    margin-left:5.7rem;
+    margin-top: 0.5rem;
+}
+
+.imghand{
+box-shadow: 0px 4px 10px black; 
+
+
+}
+#hand-imge {
+  opacity: 0;                        /* invisible at start */
+  transform:scale(0);     /* shifted upward by 200px */
+  transition: opacity 2s ease, 
+              transform 2s ease;     /* smooth animation for both */
+}
+
+#hand-imge.visible{
+  opacity: 1;                        /* fade in */
+  transform:scale(1);          /* move to original position */
+}
+#girl-imge {
+  opacity: 0;                        /* invisible at start */
+  transform:scale(0);     /* shifted upward by 200px */
+  transition: opacity 2s ease, 
+              transform 2s ease;     /* smooth animation for both */
+}
+
+#girl-imge.visible{
+  opacity: 1;                        /* fade in */
+  transform:scale(1);          /* move to original position */
+}
+
+
+.imggirl{
+box-shadow: 0px 4px 10px black; 
+
+
+}
+
+.imggirl.ms-extra,.imggirl.mt-extra{
+  margin-left:5rem;
+    margin-top:3.8rem;
+
+}
+.imghand.ms-extra,.imghand.mt-extra{
+  
+   margin-left:7rem;
+    margin-top:-0.5rem;
+}
+.text-res.ms-extra,.text-res.mt-extra{
+     margin-left:-7rem;
+    margin-top:0rem;
+
+
+}
+.container-residential{
+    background-color: rgba(126, 97, 241, 0.331);
+    box-shadow: 0px 4px 10px lab(0% 0 0); 
+border: 2px solid #ffc037;  
+border-radius: 20px;         /* rounded corners */
+
+
+}
+
+
+/*for choose us animation */
+
+
+#item-chooseus:hover{
+    transform: scale(1.05);
+  background-color: #fce791;
+  z-index: 100;
+
+}
+
+
+

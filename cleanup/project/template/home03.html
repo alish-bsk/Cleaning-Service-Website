@@ -1,0 +1,1145 @@
+<!doctype html>
+<html lang="en">
+  <head>
+        {% load static %}
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>website</title>
+    <link href={% static 'css\home13.css' %} rel="stylesheet" >
+    <script src="{% static 'js/homescroll04.js' %}" ></script>
+    <script src="{% static 'js/callus01.js' %}" defer ></script>
+
+    <script src="{% static 'js/book02.js' %}" defer ></script>
+
+
+<script
+  src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.8.5/dist/dotlottie-wc.js"
+  type="module"
+></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<!--boostrap file -->
+<!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Bootstrap JS Bundle (includes Popper) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+
+  </head>
+
+
+
+<body class="background">
+<!--Top navigation -->
+<header>
+
+<nav class="navbar navbar-expand-lg   px-4">
+    <a class="navbar-brand ms-5 fs-1" href="{% url 'home' %}"><img class="divoneimg" src="{% static "img/Vacate Cleaners Offical Logo.png"%}" alt="Logo"></a>
+
+      <div class="container-fluid">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse " id="navbarSupportedContent">
+      <ul class="navbar-nav m-auto me-5 mb-2 fs-5 text-center">
+        <li class="nav-item px-2 fs-5 ">
+<a class="nav-link" href="#about-us">About us</a>
+        </li>
+ <li class="nav-item dropdown px-2  fs-5">
+<a class="nav-link  " 
+   href="#service" >
+  Services
+</a>
+</li>
+        <li class="nav-item px-2  fs-5">
+          <a class="nav-link" href="#guarantee">Guarantee</a>
+        </li>
+
+        <li class="nav-item px-2 fs-5">
+          <a class="nav-link" href="#contact">Contact</a>
+        </li>
+          <li class="nav-item px-2 fs-5">
+<a class="nav-link active" href="#" onclick="openpop()">+1300 123 456</a>
+        </li>
+        <li class="nav-item px-2   py-1 fs-5">
+            <button class="nav-item bg-warning request-call">REQUEST A CALL</button>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+</header>
+<!--for background -->
+<section id="background">
+<div class="container py-5 " id="topscrollItem">
+  <div class="row align-items-center">
+    
+    <!-- Left Text -->
+    <div class="col-md-6">
+      <h2 class="mb-3 mt-extra ms-extra top-text">Complete Vacate Cleaning Solutions</h2><br>
+      <p class="top-textsecd ms-extra">
+        27 specialized services across 5 categories. Every cleaning need for your 
+        end-of-lease property handover.      </p>
+      <button class="btn border border-dark   bg-warning text-dark fw-bold ms-extra top-btns" onclick="openpopbook()">Book Now</button>
+    </div>
+
+    <!-- Right Image -->
+    <div class="col-md-6">
+      <img src="{% static "img/employee.png"%}" class="img-fluid rounded  mt-extra ms-extra " alt="Side Image">
+    </div>
+
+  </div>
+</div>
+</section>
+<br>
+<!---->
+
+
+<!-- for services -->
+<section id="service">
+ <div class="container-fluid mt-extra services-container"  id="servicescrollItem" >
+
+   <p class="h4 pt-extra ps-extra services-headingone"><span class="badge text-bg-warning">Services</span></p>
+    <p class="h1 pt-extra ps-extra services-headingtwo"><span class="text-primary">What we propose</span></p>
+    <p class="h6 pt-extra ps-extra services-headingthree"><span class="text-white">
+      We offer a wide range of cleaning services, from regular house cleaning to specialized services like carpet cleaning and post-construction<br> clean-up. Our team of professional cleaners is fully trained and equipped to handle any job, big or small. If you’re looking for a reliable and <br> professional cleaning service, look no further than Clean-24.
+  
+    </span></p>
+<br>
+  <!--card services-->
+
+
+<div class="container-fluid mt-extra services-cardall">
+
+<div class="card-serviceitemcontainer">
+<div class="card card-serviceitemone  " style="width: 18rem;" id="services-cardonex">
+  <img src="{% static "img/residential.jpeg"%}" class="card-img-top image-cardservice" alt="residential">
+  <div class="card-body">
+  <p class="category-title fs-4  text-dark fw-bold text-center">Residential </p>
+
+    <p class="card-text fs-5 text-center card-servicetext">Complete bond cleaning for apartments,houses, and townhouses. Our most popular services for tenants moving out.</p>
+      <a class="category-title fs-2 ps-5 text-info" href="{% url 'residential' %}">Learn More</a><br>
+
+  </div>
+</div>
+</div>
+
+<div class="card-serviceitemcontainer">
+
+<div class="card card-serviceitemone " style="width: 18rem;" id="services-cardonecen">
+  <img src="{% static "img/bond.jpg"%}" class="card-img-top image-cardservice" alt="bond">
+  <div class="card-body">
+      <p class="category-title fs-4  text-dark fw-bold text-center" >Bond</p>
+
+    <p class="card-text fs-5 text-center card-servicetext">Complete end-of-lease cleaning to meet property manager standards.Includes all rooms, carpets, windows, kitchen, and bathrooms.</p>
+    <a class="category-title fs-2 ps-5 text-info " href="{% url 'bond' %}">Learn More</a><br>
+
+  </div>
+</div>
+</div>
+
+
+<div class="card-serviceitemcontainer">
+
+<div class="card card-serviceitemone " style="width: 18rem;" id="services-cardonexpos">
+  <img src="{% static "img/end.jpg"%}" class="card-img-top image-cardservice" alt="end">
+  <div class="card-body">
+    <p class="category-title fs-4 text-dark fw-bold text-center" >End Of Lease</p>
+
+    <p class="card-text fs-5 text-center  card-servicetext">Comprehensive move-out cleaning service ensuring property return in pristine condition. Guaranteed agent approval.</p>
+      <a class="category-title fs-2 ps-5 text-info" href="{% url 'lease' %}">Learn More</a>
+
+  
+  </div>
+</div>
+</div>
+
+<div class="card-serviceitemcontainer">
+<div class="card card-serviceitemone " style="width: 18rem;" id="services-cardtwx">
+  <img src="{% static "img/vacate.jpg"%}" class="card-img-top image-cardservice" alt="vacate">
+  <div class="card-body">
+  <p class="category-title fw-bold  fs-4 text-center " >Vacate</p>
+
+    <p class="card-text fs-5 text-center card-servicetext"> Professional property handover cleaning. Top-to-bottom service meeting REA standards for bond release.</p>
+  <a class="category-title fs-2 ps-5 text-info" href="{% url 'vacate' %}">Learn More</a>
+
+  </div>
+</div>
+</div>
+
+
+<div class="card-serviceitemcontainer">
+<div class="card card-serviceitemone " style="width: 18rem;" id="services-cardtwcen">
+  <img src="{% static "img/move.jpg"%}" class="card-img-top image-cardservice" alt="move out">
+  <div class="card-body">
+      <p class="category-title fw-bold  fs-4 text-center " >Move Out</p>
+
+    <p class="card-text fs-5 text-center card-servicetext">Complete cleaning as you transition to your new home. Flexible scheduling to align with your moving day.</p>
+    <a class="category-title fs-2 ps-5 text-info" href="{% url 'moveout' %}">Learn More</a>
+
+  </div>
+</div>
+</div>
+
+
+<div class="card-serviceitemcontainer">
+<div class="card card-serviceitemone " style="width: 18rem;" id="services-cardtwxpos">
+  <img src="{% static "img/exit.jpg"%}" class="card-img-top image-cardservice" alt="exit">
+  <div class="card-body">
+    <p class="category-title fw-bold  fs-4 text-center">Exit</p>
+
+    <p class="card-text fs-5 text-center card-servicetext">Thorough property exit cleaning ensuring compliance with lease requirements and property manager expectations.</p>
+      <a class="category-title fs-2 ps-5 text-info" href="{% url 'exit' %}">Learn More</a>
+
+  </div>
+</div>
+</div>
+
+<div class="card-serviceitemcontainer">
+<div class="card card-serviceitemone " style="width: 18rem;" id="services-cardthrex">
+  <img src="{% static "img/movein.jpg"%}" class="card-img-top image-cardservice" alt="move out">
+  <div class="card-body">
+    <p class="category-title fw-bold  fs-4 text-center" href="">Move In</p>
+
+    <p class="card-text fs-5 text-center card-servicetext">Thorough property exit cleaning ensuring compliance with lease requirements and property manager expectations.</p>
+        <a class="category-title fs-2 ps-5 text-info" href="{% url 'movein' %}">Learn More</a>
+
+  </div>
+</div>
+</div>
+
+<div class="card-serviceitemcontainer">
+<div class="card card-serviceitemone " style="width: 18rem;" id="services-cardthrecen">
+  <img src="{% static "img/rental.jpeg"%}" class="card-img-top image-cardservice" alt="rental">
+  <div class="card-body">
+    <p class="category-title fw-bold  fs-4 text-center" href="">Rental</p>
+
+    <p class="card-text fs-5 text-center card-servicetext"> Ongoing or one-time cleaning for rental properties. Maintain property condition throughout tenancy.</p>
+    <a class="category-title fs-2 ps-5 text-info" href="{% url 'rental' %}">Learn More</a>
+
+  </div>
+</div>
+</div>
+
+<div class="card-serviceitemcontainer">
+<div class="card card-serviceitemone " style="width: 18rem;" id="services-cardthrexpos">
+  <img src="{% static "img/commercial.jpg"%}" class="card-img-top image-cardservice" alt="commercial & industrial">
+  <div class="card-body">
+    <p class="category-title fw-bold  fs-5 text-center">Commercial & Industrial</p>
+
+    <p class="card-text fs-5 text-center card-servicetext">Professional office, warehouse, and retail space cleaning tailored to commercial lease requirements.</p>
+  
+      <a class="category-title fs-2 ps-5 text-info" href="{% url 'cominst' %}">Learn More</a>
+</div>
+</div>
+</div>
+
+
+<div class="card-serviceitemcontainer">
+<div class="card card-serviceitemone " style="width: 18rem;" id="services-cardfurx">
+  <img src="{% static "img/oven.jpg"%}" class="card-img-top image-cardservice" alt="oven">
+  <div class="card-body">
+    <p class="category-title fw-bold  fs-4 text-center">Oven</p>
+
+    <p class="card-text fs-5 text-center card-servicetext">Deep oven and cooktop cleaning. Removes baked-on grease and carbon buildup.Includes rangehood.
+</p>
+        <a class="category-title fs-2 ps-5 text-info" href="{% url 'oven' %}">Learn More</a>
+
+</div>
+</div>
+</div>
+
+
+</div>
+</section>
+<!---->
+
+    
+
+</div>
+</div>
+
+<br>
+<!--  -->
+
+
+<!--For user review-->
+
+<section id="userreview">
+<div class="container-fluid overflow-hidden userview-cardall">
+<h1 class="pt-extra ps-extra heading-user link-underline-primary heading-usertext">
+  Our Clients <span class="text-primary">Love Us!</span>
+</h1>
+<hr class="w-25 m-auto text-primary custom-hr">
+<br>
+  <div class="d-flex flex-row  flex-nowrap gap-5 slide-track">
+
+<div class="card w-75 mb-3 ">
+  <div class="card-body card-bodyuser">
+      <img src="{% static "img/person.jpg"%}" class="cards-userimg" alt="...">
+<h5 class="card-title mt-extra ms-extra heading-nametext">Lena Lipkova</h5>
+    <p class="card-text ms-extra">2 years ago</p><br>
+  <img src="{% static "img/fivestar.png"%}" class="cardstar mt-extra" alt="...">
+<h6 class="card-title heading-reviewtext ">Excellent service! The work was completed 100%, quickly and efficiently.Thank you for the professional approach,</h6>
+
+  </div>
+</div>
+
+<div class="card w-75 mb-3">
+  <div class="card-body card-bodyuser">
+      <img src="{% static "img/james.jpg"%}" class="cards-userimg" alt="...">
+<h5 class="card-title mt-extra ms-extra heading-nametext">James Christ</h5>
+    <p class="card-text ms-extra">4 years ago</p><br>
+  <img src="{% static "img/fivestar.png"%}" class="cardstar  mt-extra" alt="..."><br>
+<h6 class="card-title heading-reviewtext ">  Outstanding service! The job was completed perfectly, with speed and efficiency.  
+  Thank you for your professional approach.</h6>
+
+  </div>
+</div>
+
+<div class="card w-75 mb-3">
+  <div class="card-body card-bodyuser">
+      <img src="{% static "img/emily.jpg"%}" class="cards-userimg" alt="...">
+<h5 class="card-title mt-extra ms-extra heading-nametext">Emily Osment</h5>
+    <p class="card-text ms-extra">2 years ago</p><br>
+  <img src="{% static "img/fivestar.png"%}" class="cardstar mt-extra" alt="..."><br>
+<h6 class="card-title heading-reviewtext ">  Truly excellent work — everything was finished 100% on time, quickly and with great care.  
+  I appreciate the professionalism!</h6>
+
+  </div>
+</div>
+
+<div class="card w-75 mb-3">
+  <div class="card-body card-bodyuser">
+      <img src="{% static "img/riyan.png"%}" class="cards-userimg" alt="...">
+<h5 class="card-title mt-extra ms-extra heading-nametext">Riyan Tarhan</h5>
+    <p class="card-text ms-extra"> 1 years ago</p><br>
+  <img src="{% static "img/fivestar.png"%}" class="cardstar mt-extra" alt="..."><br>
+<h6 class="card-title ">  Fantastic experience! The team delivered flawless results, fast and efficiently.  
+  Thank you for handling everything so professionally.</h6>
+
+  </div>
+</div>
+
+
+
+
+  </div>
+</div>
+
+</section>
+<br>
+
+<!--       -->
+
+
+
+<!-- for choose us       -->
+<section id='choose-us'>
+    <h1 class="heading-choose text-center mt-5">Why<span class="text-warning"> Choose Us</span></h1>
+    <hr class="w-25 m-auto text-primary custom-hr">
+  <div class="container   ms-extra choose-container">
+  <div class="chooseus-top mt-extra ms-extra" id="choosescrollitem">
+    <div>
+  <h1 class="heading-namech pt-extra ps-extra"><span class="text-white">PROFESSIONAL</span></h1>
+  <h1 class="heading-namechtw pt-extra ps-extra"><span class="text-warning">CLEANING SERVICE</span></h1>
+    <p class="heading-paraghch pt-extra ps-extra"> <span class="text-white">27 specialized services across 5 categories. Every cleaning need for our  end-of-lease property handover.<span></p><br>
+
+
+  <img src="{% static "img/imgfirst.png"%}" class="image-first mt-extra ms-extra" alt="imagechoose" id="img-first">
+<img src="{% static "img/imgsd.png"%}" class="image-scd mt-extra ms-extra" alt="imagechoose" id="img-scd">
+<img src="{% static "img/choose.png"%}" class="image-choose mt-extra ms-extra" alt="imagechoose" id="img-choose">
+
+  </div>
+</div>
+</section>
+<br>
+<!--   -->
+
+
+
+<!-- for about-us      -->
+<section id="about-us">
+<div class="container py-5 container-aboutus">
+  <div class="row align-items-center mt-extra container-aboutusall">
+
+    <!-- Left Image -->
+    <div class="col-md-6 ">
+      <div class="container mt-extra ms-extra lottie-img">
+<dotlottie-wc
+  src="https://lottie.host/508e03bb-04de-477f-8a5b-a99ff9d8be34/WkQafEJHmv.lottie"
+  style="width: 300px;height: 300px"
+  autoplay
+  loop
+></dotlottie-wc>
+      </div>
+    </div>
+
+    <!-- Right Text -->
+    <div class="col-md-6 mt-extra">
+      <h2 class="fw-bold heading-aboutus">About Us</h2>
+      <p class="mt-3 heading-aboutus">
+Vacate Cleaning Solutions Pros started in 2011 as a small domestic cleaning service company. Since then, we have broadened our services to include a wide array of cleaning solutions, such as end of lease cleaning, window cleaning, steam cleaning, pressure cleaning, and tile and grout cleaning across the Perth region. Our dedication and consistent hard work have enabled us to secure relationships with over 50 real estates, who now recommend us as their preferred cleaners in Perth. Our journey reflects our commitment to quality and our ongoing efforts to exceed our clients’ expectations.
+
+      </p>
+    </div>
+
+  </div>
+</div>
+
+</section>
+<br><br>
+<!--     -->
+<!-- for guarantee-->
+
+<section class="guarantee-section" id="guarantee">
+    <div class="container">
+        <div class="page-hero-content">
+            <div class="guarantee-badge-large">
+<svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" fill="#003D8F" class="guarantee-icon" viewBox="0 0 16 16">
+  <path d="M5.072 0a1 1 0 0 0-.894.553L3.382 2H1a1 1 0 0 0-.832 1.555l1.518 2.276a1 1 0 0 1 0 1.338L.168 9.445A1 1 0 0 0 1 11h2.382l.796 1.447A1 1 0 0 0 5.072 13h5.856a1 1 0 0 0 .894-.553L12.618 11H15a1 1 0 0 0 .832-1.555l-1.518-2.276a1 1 0 0 1 0-1.338L15.832 3.555A1 1 0 0 0 15 2h-2.382l-.796-1.447A1 1 0 0 0 10.928 0H5.072z"/>
+  <path d="M10.97 4.03a.75.75 0 0 1 1.06 1.06l-3.5 3.5a.75.75 0 0 1-1.06 0l-1.5-1.5a.75.75 0 1 1 1.06-1.06l.97.97 2.97-2.97z"/>
+</svg>
+            </div>
+
+            <h1 class="page-title">100% Bond Back Guarantee</h1>
+
+            <p class="page-description">
+                Australia's strongest bond return guarantee. If your property manager identifies any issues within 72 hours, we re-clean at no cost.
+            </p>
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container text-center">
+        <span class="section-label">How It Works</span>
+        <h2 class="section-title">Your Bond Protection, Simplified</h2>
+
+        <div class="mt-5">
+            
+            <!-- Steps -->
+            <div class="guarantee-steps ms-extra">
+
+                <div class="guarantee-step ms-extra">
+                    <div class="step-centerone ms-extra">
+                        <h3 class="step-title">We Clean to REA Standards</h3>
+                        <p>Professional vacate clean with REA-approved checklists and photo documentation.</p>
+                    </div>
+                </div>
+
+                <div class="guarantee-step">
+                    <div class="step-centertw ms-extra">
+                        <h3 class="step-title">Property Manager Inspection</h3>
+                        <p>98% pass rate on first inspection — bond released immediately.</p>
+                    </div>
+                </div>
+
+                <div class="guarantee-step">
+                    <div class="step-centertw ms-extra">
+                        <h3 class="step-title">72-Hour Re-Clean Window</h3>
+                        <p>If issues arise, submit feedback within 72 hours for a re-clean.</p>
+                    </div>
+                </div>
+
+                <div class="guarantee-step">
+                    <div class="step-centertw ms-extra">
+                        <h3 class="step-title">Free Re-Clean Service</h3>
+                        <p>We return free of charge — no excuses, no hidden fees.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section" style="background:#f7faff;">
+    <div class="container">
+        <div class="two-column-layout">
+
+            <!-- LEFT COLUMN -->
+            <div class="content-column">
+                <h2 class="section-title">Guarantee Terms & Conditions</h2>
+
+                <div class="terms-section mt-4">
+                    <h3>Qualifying Services</h3>
+                    <ul>
+                        <li>Vacate, bond, end-of-lease cleaning</li>
+                        <li>Residential & small commercial spaces</li>
+                        <li>Full-scope services only</li>
+                    </ul>
+                </div>
+
+                <div class="terms-section">
+                    <h3>Time Frame</h3>
+                    <p>Requests must be submitted within 72 hours of original service.</p>
+                </div>
+
+                <div class="terms-section">
+                    <h3>Verification Requirements</h3>
+                    <ul>
+                        <li>Property manager feedback</li>
+                        <li>Photos if required</li>
+                        <li>Booking reference</li>
+                    </ul>
+                </div>
+
+                <div class="terms-section">
+                    <h3>Exclusions</h3>
+                    <ul>
+                        <li>Damage to property</li>
+                        <li>Additional services not booked</li>
+                        <li>Claims after 72 hours</li>
+                    </ul>
+                </div>
+
+                <div class="terms-section">
+                    <h3>Response Time</h3>
+                    <ul>
+                        <li>Reply within 2 hrs</li>
+                        <li>Re-clean within 24 hrs</li>
+                        <li>Full completion within 48 hrs</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- RIGHT SIDEBAR -->
+            <div class="sidebar-column">
+
+                <div class="guarantee-stats-card">
+                    <h3 class="mb-4">Our Track Record</h3>
+
+                    <div class="stat-item-large">
+                        <div class="stat-number-large">98.4%</div>
+                        <p>Bond Return Success Rate</p>
+                    </div>
+
+                    <div class="stat-divider"></div>
+
+                    <div class="stat-item-large">
+                        <div class="stat-number-large">6.2%</div>
+                        <p>Re-Clean Request Rate</p>
+                    </div>
+
+                    <div class="stat-divider"></div>
+
+                    <div class="stat-item-large">
+                        <div class="stat-number-large">100%</div>
+                        <p>Guarantee Honored</p>
+                    </div>
+                </div>
+
+                <div class="cta-card mt-4">
+                    <h4>Questions About Our Guarantee?</h4>
+                    <p>Our team is here to assist you.</p>
+                    <a href="#" class="btn btn-primary btn-full">Contact Us</a>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</section>
+<section class="section">
+    <div class="container  text-center">
+        <span class="section-label">Our Commitment</span>
+        <h2 class="section-title">Why We Offer the Strongest Guarantee in Australia</h2>
+
+        <div class="reasons-grid mt-5">
+
+            <div class="reason-card">
+    <svg class="reason-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" width="40" height="40">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
+              d="M12 2l9 4.5v5c0 5.25-3.75 9.75-9 10-5.25-.25-9-4.75-9-10v-5L12 2z" />
+    </svg>
+                <h3>Confidence in Our Systems</h3>
+                <p>13+ years of REA-approved processes ensures consistent results.</p>
+            </div>
+
+            <div class="reason-card">
+    <svg class="reason-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" width="40" height="40">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
+              d="M17 20h5v-2a4 4 0 00-4-4h-1m-4 6v-6m0-4a4 4 0 110-8 4 4 0 010 8zm-6 4a4 4 0 014-4h0a4 4 0 014 4v6H7v-6z" />
+    </svg>
+                <h3>Professional Team</h3>
+                <p>Trained, insured employees who know property manager expectations.</p>
+            </div>
+
+            <div class="reason-card">
+    <svg class="reason-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="48" height="48">
+        <!-- Example icon: shield -->
+        <path d="M12 2L3 5v6c0 5 3.8 9.8 9 11 5.2-1.2 9-6 9-11V5l-9-3z" fill="#4CAF50"/>
+    </svg>
+                <h3>Your Protection</h3>
+                <p>Our guarantee removes the anxiety of bond return.</p>
+            </div>
+
+            <div class="reason-card">
+    <svg class="reason-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" width="40" height="40">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
+              d="M5 13l4 4L19 7" />
+    </svg>
+                <h3>It's Simply Right</h3>
+                <p>If we miss something, we fix it — always.</p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section class="section cta-section" style="background: linear-gradient(135deg, #002359, #003D8F);">
+    <div class="container text-center">
+        <h2 class="cta-title text-white">Book with Complete Confidence</h2>
+        <p class="cta-description text-light">
+            Join 15,000+ Australians who chose the only cleaning service with a genuine 100% bond back guarantee.
+        </p>
+
+        <a href="#background" class="btn btn-light btn-lg mt-4">
+            Get Free Quote & Book Online
+        </a>
+    </div>
+</section>
+<!--     -->
+
+
+    <!-- Contact Methods -->
+    <section id="contact">
+        <div class="container">
+            <div class="contact-methods-grid">
+                <!-- Phone -->
+                <div class="contact-method-card">
+                    <div class="method-icon">
+                        <svg viewBox="0 0 24 24"><path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1 1 0 011.11-.21c1.2.48 2.5.74 3.83.74a1 1 0 011 1v3.5a1 1 0 01-1 1C10.07 22 2 13.93 2 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.33.26 2.63.74 3.83a1 1 0 01-.21 1.11l-2.2 2.2z"/></svg>
+                    </div>
+                    <h3 class="method-title">Phone Support</h3>
+                    <p class="method-description">Speak directly with our team for immediate assistance.</p>
+                    <p  class="method-link">1300 123 456</p>
+                    <p class="method-hours">Mon-Fri: 8am-6pm | Sat: 9am-4pm | Sun: Closed</p>
+                </div>
+
+                <!-- Email -->
+                <div class="contact-method-card">
+                    <div class="method-icon">
+                        <svg viewBox="0 0 24 24"><path d="M20 4H4a2 2 0 00-2 2v12a2 2 0 002 2h16a2 2 0 002-2V6a2 2 0 00-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+                    </div>
+                    <h3 class="method-title">Email Us</h3>
+                    <p class="method-description">Send us a detailed message. We respond within 4 hours.</p>
+                    <p class="method-link">bookings@vacatecleaners.com.au</p>
+                    <p class="method-hours">Same-day response during business hours</p>
+                </div>
+
+                <!-- Online Quote -->
+                <div class="contact-method-card">
+                    <div class="method-icon">
+                        <svg viewBox="0 0 24 24"><path d="M3 3h18v2H3V3zm2 4h14v2H5V7zm0 4h14v2H5v-2zm0 4h14v2H5v-2z"/></svg>
+                    </div>
+                    <h3 class="method-title">Get Instant Quote</h3>
+                    <p class="method-description">Receive pricing and book online 24/7. No waiting required.</p>
+                    <p  class="method-link">Online Quote Form</p>
+                    <p class="method-hours">Instant automated quote + human review</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section class="section" style="background: var(--color-background);">
+        <div class="container">
+            <div class="two-column-layout">
+                <!-- Left: Form -->
+                <div class="content-column">
+                    <h2 class="section-title">Send Us a Message</h2>
+                    <p class="section-description">Fill out the form below and we'll get back to you within 4 business hours.</p>
+                    <form class="contact-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="first_name">First Name </label>
+                                <input type="text" id="first_name" name="first_name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="last_name">Last Name </label>
+                                <input type="text" id="last_name" name="last_name" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">Email Address </label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" name="phone">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="inquiry_type">Inquiry Type </label>
+                            <select id="inquiry_type" name="inquiry_type" required>
+                                <option value="">Select type...</option>
+                                <option value="quote">Get a Quote</option>
+                                <option value="booking">Booking Question</option>
+                                <option value="reclean">Re-Clean Request</option>
+                                <option value="feedback">Feedback</option>
+                                <option value="partnership">Partnership Inquiry</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Your Message *</label>
+                            <textarea id="message" name="message" rows="6" required></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary btn-full">Send Message</button>
+                    </form>
+                </div>
+
+                <!-- Right: Sidebar -->
+                <div class="sidebar-column">
+                    <div class="info-card">
+                        <h3 class="info-card-title">Head Office</h3>
+                        <div class="info-item">
+                            <svg class="info-icon" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5S10.62 6.5 12 6.5s2.5 1.12 2.5 2.5S13.38 11.5 12 11.5z"/></svg>
+                            <div class="info-content">
+                                <p class="info-label">Address</p>
+                                <p class="info-value">Suite 12, 45 Business Street<br>Perth WA 6000<br>Australia</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <svg class="info-icon" viewBox="0 0 24 24"><path d="M12 8v5l4 2"/></svg>
+                            <div class="info-content">
+                                <p class="info-label">Business Hours</p>
+                                <p class="info-value">Monday-Friday: 8:00am - 6:00pm<br>Saturday: 9:00am - 4:00pm<br>Sunday: Closed</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <svg class="info-icon" viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zm0 7.5l10 5-10 5-10-5 10-5z"/></svg>
+                            <div class="info-content">
+                                <p class="info-label">ABN</p>
+                                <p class="info-value">29 616 992 324</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-label">Quick Answers</span>
+                <h2 class="section-title">Frequently Asked Questions</h2>
+            </div>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h3 class="faq-question">How quickly can you respond to urgent requests?</h3>
+                    <p class="faq-answer">For urgent re-clean requests within our 72-hour guarantee window, we aim to schedule service within 24 hours.</p>
+                </div>
+                <div class="faq-item">
+                    <h3 class="faq-question">Do you provide written quotes before booking?</h3>
+                    <p class="faq-answer">Yes. Every quote is provided in writing via email with full scope of work and pricing breakdown before any payment.</p>
+                </div>
+                <div class="faq-item">
+                    <h3 class="faq-question">Can I modify my booking after confirmation?</h3>
+                    <p class="faq-answer">Yes. Contact us at least 48 hours before your scheduled service to modify date, time, or scope without penalties.</p>
+                </div>
+                <div class="faq-item">
+                    <h3 class="faq-question">What if I need to cancel?</h3>
+                    <p class="faq-answer">Cancel up to 48 hours before service for full deposit refund. Within 48 hours, deposit is forfeited.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!--for call us section-->
+<section id="callus">
+<div class="alertopen" id="alertpopup">
+    <div class="icon"></div>
+    <i class="fa fa-phone"></i>
+    <span>Please call us !!!!</span>
+</div>
+</section>
+<!--   -->
+
+
+
+
+<!--for book service  section-->
+
+<section id="book">
+
+<div class="  mt-extra  containerbluropen " id="booknowblur">
+</div>
+
+<div class="  container-fluid   w-25 h-extra border border-3 border-warning mt-extra     conformbookopen" id="booknow">
+<form  action="{% url 'bookservices' %}"  method="post"  enctype="multipart/form-data">
+
+  {% csrf_token %}
+
+
+<!--first name-->
+  <div class="mb-3 pt-3">
+<div class="row align-items-center">
+    <div class="col-auto"><i class="fas fa-user"></i></div>
+    <div class="col"><input type="text" class="form-control border-0 border-bottom  border-dark nooutline bg-transparent text-white" name="firstname" placeholder="First Name"></div>
+</div>
+{% if firstnameerr  == "on" %}
+    <div  class="form-text text-danger"><i class="fas fa-exclamation-triangle visible-hidden"></i> {{err}}</div>
+{%endif%}
+
+        </div>
+
+
+
+<!--middle name-->
+  <div class="mb-3">
+<div class="row align-items-center">
+    <div class="col-auto"><i class="fas fa-user"></i></div>
+    <div class="col"><input type="text" class="form-control border-0 border-bottom  border-dark nooutline bg-transparent text-white" name="middlename" placeholder="Middle Name"></div>
+</div>
+{% if middlenameerr  == "on" %}
+    <div  class="form-text text-danger"><i class="fas fa-exclamation-triangle visible-hidden"></i> {{err}}</div>
+{%endif%}
+        </div>
+
+
+
+<!--last name-->
+  <div class="mb-3">
+<div class="row align-items-center">
+    <div class="col-auto"><i class="fas fa-user"></i></div>
+    <div class="col"><input type="text" class="form-control border-0 border-bottom  border-dark nooutline bg-transparent text-white" name="lastname" placeholder="Last Name"></div>
+</div>
+{% if lastnameerr  == "on" %}
+    <div  class="form-text text-danger"><i class="fas fa-exclamation-triangle visible-hidden"></i> {{err}}</div>
+{%endif%}
+        </div>
+
+
+
+<!--company name-->
+  <div class="mb-3 ">
+<div class="row align-items-center">
+    <div class="col-auto"><i class="fa fa-building"></i></div>
+    <div class="col"><input type="text" class="form-control border-0 border-bottom  border-dark nooutline bg-transparent  text-white" name="comhousname" placeholder="Company Name or House Name"></div>
+</div>
+{% if companynameerr  == "on" %}
+    <div  class="form-text text-danger"><i class="fas fa-exclamation-triangle visible-hidden"></i> {{err}}</div>
+{%endif%}
+        </div>
+
+
+<!--address-->
+       
+  <div class="mb-3">
+<div class="row align-items-center">
+    <div class="col-auto"><i class="fa fa-map-marker"></i></div>
+    <div class="col"><input type="text" class="form-control border-0 border-bottom  border-dark nooutline bg-transparent text-white" name="address" placeholder="Address"></div>
+{% if addresserr  == "on" %}
+    <div  class="form-text text-danger"><i class="fas fa-exclamation-triangle visible-hidden"></i> {{err}}</div>
+{%endif%}
+
+</div><br>
+
+<!--email address name-->
+  <div class="mb-3 ">
+<div class="row align-items-center">
+    <div class="col-auto"><i class="fa fa-envelope"></i></div>
+    <div class="col"><input type="email" class="form-control border-0 border-bottom   border-dark nooutline bg-transparent text-white" name="email" placeholder="Email Address"></div>
+{% if emailerr  == "on" %}
+    <div  class="form-text text-danger"><i class="fas fa-exclamation-triangle visible-hidden"></i> {{err}}</div>
+{%endif%}
+
+</div><br>
+
+<!--phone number -->
+  <div class="mb-3 ">
+<div class="row align-items-center">
+    <div class="col-auto"><i class="fa fa-phone"></i></div>
+    <div class="col"><input type="text" class="form-control border-0 border-bottom  border-dark nooutline bg-transparent text-white" name="phonenumber" placeholder="Phone Number"></div>
+{% if phonenumbererr  == "on" %}
+    <div  class="form-text text-danger"><i class="fas fa-exclamation-triangle visible-hidden"></i> {{err}}</div>
+{%endif%}
+
+</div><br>
+
+<!-- Date  -->
+  <div class="mb-3 ">
+  <div class="row align-items-center">
+  <div class="col-auto"><i class="fa fa-calendar"></i> </div>    
+  <div class="col"><input type="date" class="form-control border-0 border-bottom  border-dark nooutline bg-transparent text-white" name="date" placeholder="Date"></div>
+{% if dateerr  == "on" %}
+    <div  class="form-text text-danger"><i class="fas fa-exclamation-triangle visible-hidden"></i> {{err}}</div>
+{%endif%}
+
+</div><br>
+
+
+<!-- Time  -->
+  <div class="mb-3 ">
+  <div class="row align-items-center">
+  <div class="col-auto">  <i class="fa fa-clock"></i> </div>    
+  <div class="col"><input type="time" class="form-control border-0 border-bottom  border-dark nooutline bg-transparent text-white" name="time" placeholder="Time"></div>
+{% if timeerr  == "on" %}
+    <div  class="form-text text-danger"><i class="fas fa-exclamation-triangle visible-hidden"></i> {{err}}</div>
+{%endif%}
+
+</div><br>
+
+
+
+<!--service choose -->
+      <div class="mb-3 fw-bold fs-5 ">
+    <label for="exampleInputPassword1" class="form-label ms-2 text-warning ">Tell us what kind of office cleaning you need</label>
+  </div>
+
+
+  <div class="mb-3 ms-extra form-check checkbox-book">
+
+    <input type="checkbox" class="form-check-input" name="residential" id="exampleCheck1">
+    <label class="form-check-label text-white" for="exampleCheck1">Residential Services</label>
+  </div>
+
+    <div class="mb-3 ms-extra form-check checkbox-book">
+    <input type="checkbox" class="form-check-input" name="bond" id="exampleCheck1">
+    <label class="form-check-label text-white" for="exampleCheck1">Bond Services</label>
+  </div>
+
+      <div class="mb-3 ms-extra form-check checkbox-book">
+    <input type="checkbox" class="form-check-input" name="lease" id="exampleCheck1">
+    <label class="form-check-label text-white" for="exampleCheck1">End Of Lease Services</label>
+  </div>
+
+
+    <div class="mb-3 ms-extra form-check checkbox-book">
+    <input type="checkbox" class="form-check-input" name="vacate" id="exampleCheck1">
+    <label class="form-check-label text-white" for="exampleCheck1">Vacate Services</label>
+  </div>
+
+
+      <div class="mb-3 ms-extra form-check checkbox-book">
+    <input type="checkbox" class="form-check-input" name="moveout" id="exampleCheck1">
+    <label class="form-check-label text-white" for="exampleCheck1">Move Out Services</label>
+  </div>
+
+
+      <div class="mb-3 ms-extra form-check checkbox-book">
+    <input type="checkbox" class="form-check-input" name="exit" id="exampleCheck1">
+    <label class="form-check-label text-white" for="exampleCheck1">Exit Services</label>
+  </div>
+
+      <div class="mb-3 ms-extra form-check checkbox-book">
+    <input type="checkbox" class="form-check-input" name="movein" id="exampleCheck1">
+    <label class="form-check-label text-white" for="exampleCheck1">Move In Services</label>
+  </div>
+
+      <div class="mb-3 ms-extra form-check checkbox-book">
+    <input type="checkbox" class="form-check-input" name="rental" id="exampleCheck1">
+    <label class="form-check-label text-white" for="exampleCheck1">Rental Services</label>
+  </div>
+
+      <div class="mb-3 ms-extra form-check checkbox-book">
+    <input type="checkbox" class="form-check-input" name="comind" id="exampleCheck1">
+    <label class="form-check-label text-white" for="exampleCheck1">Commercial & Industrial Services</label>
+  </div>
+
+      <div class="mb-3 ms-extra form-check checkbox-book">
+    <input type="checkbox" class="form-check-input" name="oven" id="exampleCheck1">
+    <label class="form-check-label text-white" for="exampleCheck1">Oven Services</label>
+  </div>
+  {% if checkchosse  == "on" %}
+
+    <div  class="form-text text-danger fs-4"><i class="fas fa-exclamation-triangle "></i>{{errcheckbox}}</div>
+
+{%endif%}
+
+
+  <button type="submit"  class="btn w-50 border border-dark mt-3 ms-extra btn-warning text-dark btn-book"  >Submit</button>
+
+</form>
+</div>
+
+
+</section>
+<!--     -->
+
+
+<!-- for calcuation of service select by customer     -->
+{% if success == "on" %}
+
+<section id="calculation-table">
+    <div class="  mt-extra  containerblurcalopen " id="bookcalblur">
+</div>
+
+
+<div class="container-fluid col-12 w-25 h-extra border border-3 border-warning mt-extra concalculationopen" id="concalculation">
+  
+  <div class="row">
+<div class="col-12 ">
+  <p class=" col-12 h1 mt-3 text-center"> Total calculation<p>
+</div>
+
+<table class="table table-bordered  border-dark">
+  <tr>
+  <div class="col-6"><th>Services name</th></div>
+  <div class="col-6"><th>Price of service</th></div>
+
+    </tr>
+
+{% for item in userservice %}
+{% for key, value in item.items %}
+
+
+  {% if key == 1 %}
+  <tr>
+  <div class="col-6"><th>Residential services</th></div>
+  <div class="col-6"><th>$ {{value }}</th></div>
+
+    </tr>
+    {%endif%}
+
+  {% if key == 2 %}
+
+      <tr>
+  <div class="col-6"><th>Bond services</th></div>
+  <div class="col-6"><th>$ {{value }}</th></div>
+
+    </tr>
+    {%endif%}
+
+  {% if key == 3 %}
+
+      <tr>
+  <div class="col-6"><th>End of lease services</th></div>
+  <div class="col-6"><th>$ {{value }}</th></div>
+
+    </tr>
+        {%endif%}
+
+
+  {% if key == 4 %}
+
+      <tr>
+  <div class="col-6"><th>Vacate services</th></div>
+  <div class="col-6"><th>$ {{value }}</th></div>
+
+    </tr>
+            {%endif%}
+
+
+  {% if key == 5 %}
+
+      <tr>
+  <div class="col-6"><th>Move out services</th></div>
+  <div class="col-6"><th>$ {{value }}</th></div>
+
+    </tr>
+            {%endif%}
+
+
+
+  {% if key == 6 %}
+
+      <tr>
+  <div class="col-6"><th>Exit services</th></div>
+  <div class="col-6"><th>$ {{value }}</th></div>
+
+    </tr>
+                {%endif%}
+
+
+  {% if key == 7 %}
+
+      <tr>
+  <div class="col-6"><th>Move in services</th></div>
+  <div class="col-6"><th>$ {{value }}</th></div>
+
+    </tr>
+{%endif%}
+
+
+  {% if key == 8 %}
+                   
+      <tr>
+  <div class="col-6"><th>Rental services</th></div>
+  <div class="col-6"><th>$ {{value }}</th></div>
+
+    </tr>
+{%endif%}
+
+
+  {% if key == 9 %}
+
+      <tr>
+  <div class="col-6"><th>Commercial & Industrial services</th></div>
+  <div class="col-6"><th>$ {{value }}</th></div>
+
+    </tr>
+    {%endif%}
+
+
+  {% if key == 10 %}
+
+      <tr>
+  <div class="col-6"><th>Oven services</th></div>
+  <div class="col-6"><th>$ {{value }}</th></div>
+
+    </tr>
+  {%endif%}
+
+  {%endfor%}
+  {%endfor%}
+
+
+      <tr>
+  <div class="col-6"><th>Total price</th></div>
+  <div class="col-6"><th>$ {{totalprice}}</th></div>
+
+    </tr>
+
+
+
+
+  </div>
+</table>
+
+
+
+
+<div class="col-12 ">
+  <p class="  h6 mt-3 text-center text-warning">Please pay your bill <span class="text-white">"click below button"</span><p>
+</div>
+<div class="col-12 ms-extra btn-pay">
+<form action="{% url 'sendmail' %}" method="POST"   enctype="multipart/form-data">
+    {% csrf_token %}
+      <button type="submit"  class="btn  bg-warning border border-1 border-dark" name="action" value="save" >Pay Bill</button>
+</form>
+</div>
+
+</div>
+
+
+
+
+</div>
+
+
+
+
+</section>
+{%endif%}
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.min.js" integrity="sha384-7qAoOXltbVP82dhxHAUje59V5r2YsVfBafyUDxEdApLPmcdhBPg1DKg1ERo0BZlK" crossorigin="anonymous"></script>
+
+</body>
+</html>

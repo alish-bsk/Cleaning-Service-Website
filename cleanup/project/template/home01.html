@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+  <head>
+        {% load static %}
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>website</title>
+    <link href={% static 'css\home01.css' %} rel="stylesheet" >
+    <script src="{% static 'js/homescroll01.js' %}" ></script>
+
+
+<!--boostrap file -->
+<!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Bootstrap JS Bundle (includes Popper) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+
+  </head>
+
+
+
+<body class="background">
+<!--Top navigation -->
+<header>
+
+<nav class="navbar navbar-expand-lg   px-4">
+    <a class="navbar-brand ms-5 fs-1" href="#"><img class="divoneimg" src="{% static "img/Vacate Cleaners Offical Logo.png"%}" alt="Logo"></a>
+
+      <div class="container-fluid">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse " id="navbarSupportedContent">
+      <ul class="navbar-nav m-auto me-5   mb-2  fs-5 text-center">
+        <li class="nav-item px-1 fs-5 ">
+<a class="nav-link" href="#">About us</a>
+        </li>
+ <li class="nav-item dropdown px-5 fs-5">
+<a class="nav-link  " 
+   href="#service" >
+  Services
+</a>
+</li>
+        <li class="nav-item px-1 fs-5">
+          <a class="nav-link" href="#">Contact</a>
+        </li>
+          <li class="nav-item px-5 fs-5">
+          <a class="nav-link active"  href="#">+61------</a>
+        </li>
+        <li class="nav-item   px-5 py-1 fs-5">
+            <button class="nav-item bg-warning request-call">REQUEST A CALL</button>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+</header>
+<!--for background -->
+<section id="background">
+<div class="container py-5 " id="topscrollItem">
+  <div class="row align-items-center">
+    
+    <!-- Left Text -->
+    <div class="col-md-6">
+      <h2 class="mb-3 mt-extra ms-extra top-text">Complete Vacate Cleaning Solutions</h2><br>
+      <p class="top-textsecd ms-extra">
+        27 specialized services across 5 categories. Every cleaning need for your 
+        end-of-lease property handover.      </p>
+      <button class="btn btn-primary bg-warning text-dark ms-extra top-btn">Book Now</button>
+    </div>
+
+    <!-- Right Image -->
+    <div class="col-md-6">
+      <img src="{% static "img/employee.png"%}" class="img-fluid rounded  mt-extra ms-extra " alt="Side Image">
+    </div>
+
+  </div>
+</div>
+</section>
+<br>
+<!---->
+
+
+<!-- for services -->
+<section id="service">
+ <div class="container-fluid mt-extra services-container" >
+
+   <p class="h4 pt-extra ps-extra services-headingone"><span class="badge text-bg-warning">Services</span></p>
+    <p class="h1 pt-extra ps-extra services-headingtwo"><span class="text-primary">What we propose</span></p>
+    <p class="h6 pt-extra ps-extra services-headingthree"><span class="text-white">
+      We offer a wide range of cleaning services, from regular house cleaning to specialized services like carpet cleaning and post-construction<br> clean-up. Our team of professional cleaners is fully trained and equipped to handle any job, big or small. If you’re looking for a reliable and <br> professional cleaning service, look no further than Clean-24.
+  
+    </span></p>
+<br>
+  <!--card services-->
+
+
+<div class="container-fluid mt-extra services-cardall">
+
+<div class="card " style="width: 18rem;" id="services-cardone">
+  <img src="{% static "img/residential.jpeg"%}" class="card-img-top image-cardservice" alt="residential">
+  <div class="card-body">
+  <p class="category-title fs-2 ps-extra category-service" href="">Residential</p><br>
+
+    <p class="card-text fs-5 card-servicetext">Complete bond cleaning for apartments,houses, and townhouses. Our most popular services for tenants moving out.</p>
+  </div>
+</div>
+
+<div class="card " style="width: 18rem;" id="services-cardone">
+  <img src="{% static "img/bond.jpg"%}" class="card-img-top image-cardservice" alt="bond">
+  <div class="card-body">
+      <a class="category-title fs-2 ps-extra category-servicetw" href="">Bond</a><br>
+
+    <p class="card-text fs-5 card-servicetext">Complete end-of-lease cleaning to meet property manager standards.Includes all rooms, carpets, windows, kitchen, and bathrooms.</p>
+  </div>
+</div>
+
+
+<div class="card " style="width: 18rem;" id="services-cardone">
+  <img src="{% static "img/end.jpg"%}" class="card-img-top image-cardservice" alt="end">
+  <div class="card-body">
+    <a class="category-title fs-2 ps-extra category-servicethre" href="">End Of Lease</a><br>
+
+    <p class="card-text fs-5 card-servicetext">Comprehensive move-out cleaning service ensuring property return in pristine condition. Guaranteed agent approval.</p>
+  </div>
+</div>
+
+<div class="card " style="width: 18rem;" id="services-cardone">
+  <img src="{% static "img/vacate.jpg"%}" class="card-img-top image-cardservice" alt="vacate">
+  <div class="card-body">
+  <a class="category-title fs-2 ps-extra category-servicefur" href="">Vacate</a><br>
+
+    <p class="card-text fs-5 card-servicetext"> Professional property handover cleaning. Top-to-bottom service meeting REA standards for bond release.</p>
+  </div>
+</div>
+
+<div class="card " style="width: 18rem;" id="services-cardone">
+  <img src="..." class="card-img-top" alt="...">
+  <div class="card-body">
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+  </div>
+</div>
+
+<div class="card " style="width: 18rem;" id="services-cardone">
+  <img src="..." class="card-img-top" alt="...">
+  <div class="card-body">
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+  </div>
+</div>
+
+
+</div>
+</section>
+<!---->
+
+    
+
+</div>
+</div>
+
+<br>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.min.js" integrity="sha384-7qAoOXltbVP82dhxHAUje59V5r2YsVfBafyUDxEdApLPmcdhBPg1DKg1ERo0BZlK" crossorigin="anonymous"></script>
+
+</body>
+</html>

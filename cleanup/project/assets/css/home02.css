@@ -1,0 +1,242 @@
+/* Style for image background*/
+
+.background{
+  background:rgb(173, 173, 238);
+}
+
+
+/* Style for image navigation*/
+
+.navbar-nav{
+    font-family: Times New Roman, serif;
+}
+.nav-link:hover{
+  border: 3px dashed #ffc904; /* purple dashed border */
+  border-radius: 8px;         /* rounded corners */
+}
+.divoneimg{
+  width: 250px;
+  height: 150px;
+}
+
+.request-call{
+font-family: Times New Roman, serif;
+
+transition: transform 0.3s ease;
+}
+
+.request-call:hover {
+  transform: scale(1.1);
+}
+
+/*.............*/
+
+/*.............*/
+
+/* Style for background*/
+#topscrollItem{
+  
+ opacity: 1;
+    transition: opacity 0.5s ease;
+  }
+
+  #topscrollItem.visible {
+    opacity: 0;
+  }
+
+  .img-fluid.mt-extra{
+  margin-top:-5rem;
+
+}
+
+
+.img-fluid.ms-extra{
+  margin-left:5rem;
+
+}
+.top-text{
+    font-family: Times New Roman, serif;
+  font-weight: bold;
+
+}
+
+.top-text.mt-extra{
+  margin-top:-10rem;
+}
+.top-text.ms-extra{
+  margin-left:-1.5rem;
+}
+
+.top-textsecd{
+  font-size:18px;
+
+}
+
+.top-textsecd.ms-extra{
+  margin-left:-1.5rem;
+}
+.top-btn{
+transition: transform 0.3s ease;
+}
+
+.top-btn:hover {
+  transform: scale(1.1);
+}
+.top-btn.ms-extra{
+    margin-left:-1.5rem;
+
+}
+/*.............*/
+
+
+/*.............*/
+
+
+/* Style for services card*/
+
+.services-container {
+width: 100%;
+height:2100px;
+background-color: #000000;
+}
+
+.services-headingone.pt-extra {
+    padding-top: 8rem; /* or 10rem, 200px, anything you want */
+    padding-left: 10rem;
+}
+
+.services-headingtwo.pt-extra {
+    padding-top: 5rem; /* or 10rem, 200px, anything you want */
+    padding-left: 10rem;
+}
+
+.services-headingthree.pt-extra {
+    padding-top: 1rem; /* or 10rem, 200px, anything you want */
+}
+.services-headingthree.ps-extra {
+    padding-left: 10rem;
+}
+
+
+
+
+
+.services-cardall {
+    display: flex;
+  flex-direction: row;   /* stack cards vertically */
+  gap: 150px;                /* spacing between cards */
+  flex-wrap: wrap;       /* allow wrapping to next line */
+}
+.services-cardall.mt-extra ,.services-cardall.ms-extra{
+margin-top:1rem;
+margin-left:9rem;
+
+
+}
+.image-cardservice{
+  width:50px;
+  height:190px;
+}
+
+.category-service{
+    font-family: Times New Roman, serif;
+
+
+
+}
+.category-servicetw{
+    font-family: Times New Roman, serif;
+
+}
+
+.category-servicetw.ps-extra{
+  padding-left:5.8rem;
+}
+
+.category-servicethre{
+    font-family: Times New Roman, serif;
+
+}
+
+.category-servicethre.ps-extra{
+  padding-left:1.7rem;
+
+}
+
+.category-service.ps-extra{
+  padding-left:2.7rem;
+}
+.card-servicetext{
+    font-family: Times New Roman, serif;
+
+}
+
+.category-servicefur{
+    font-family: Times New Roman, serif;
+
+}
+
+.category-servicefur.ps-extra{
+    padding-left:5rem;
+
+}
+
+.category-servicefiv{
+    font-family: Times New Roman, serif;
+
+}
+
+.category-servicefiv.ps-extra{
+    padding-left:3.5rem;
+
+}
+
+
+/*.................*/
+
+
+/*.................*/
+
+/* Style for userview*/
+.card-bodyuser{
+    background-color: rgba(171, 171, 171, 0.354);
+}
+
+@keyframes slideRightToLeft {
+  0%   { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
+}
+
+.slide-track {
+  animation: slideRightToLeft 15s linear infinite;
+  
+}
+.heading-user{
+    padding-left:35rem;
+}
+.cards-userimg {
+  width: 50px;       /* set fixed size */
+  height: 50px;      /* same width & height */
+  border-radius:50px; /* makes it circular */
+  
+}
+.card-title.mt-extra,.card-title.ms-extra{
+    margin-top:-3.5rem;
+    margin-left:5rem;
+}
+.card-text.ms-extra{
+    margin-left:5rem;
+
+}
+
+.cardstar{
+    width:150px;
+    height: 50px;
+
+}
+.cardstar.mt-extra{
+    margin-top:-2rem;
+}
+
+
+/*.................*/

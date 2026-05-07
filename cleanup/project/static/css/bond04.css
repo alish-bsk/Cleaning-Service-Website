@@ -1,0 +1,55 @@
+.bond-promisedwn.ms-extra{
+
+    margin-left:19rem;
+}
+
+.bond-promiseup.ms-extra{
+
+   margin-left:8rem;
+}
+
+.container-promise{
+    background-color: rgba(224, 248, 11, 0.112);
+    width:100%;
+    border-radius: 40px;         /* rounded corners */
+
+    
+}
+
+@media only screen and (max-width:1441px) {
+.bond-promisedwn.ms-extra{
+
+    margin-left:15rem;
+}
+}
+
+@media only screen and (max-width:1401px) {
+.bond-promisedwn.ms-extra{
+
+    margin-left:15rem;
+}
+}
+
+
+
+
+@media only screen and (max-width:1202px) {
+.bond-promisedwn.ms-extra{
+
+    margin-left:14rem;
+}
+
+
+
+}
+
+@media only screen and (max-width:1199px) {
+    
+.bond-promisedwn.ms-extra{
+
+    margin-left:12rem;
+}
+
+
+
+}

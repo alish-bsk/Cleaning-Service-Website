@@ -1,0 +1,13 @@
+from django.contrib import admin
+from django.urls import path
+from .views import create_checkout_session, success, cancel
+from . import views
+
+
+urlpatterns = [
+path('create-checkout-session/', create_checkout_session, name='create_checkout_session'),
+path('success/', success, name='success'),
+path('cancel/', cancel, name='cancel'),
+path('payment/', views.payment, name='payment'),
+path('calculation-cancel/', views.calculationCancel, name='calculation_cancel'),
+]

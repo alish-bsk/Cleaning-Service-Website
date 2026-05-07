@@ -1,0 +1,444 @@
+/* Style for image background*/
+
+.background{
+  background:rgb(173, 173, 238);
+}
+
+
+/* Style for image navigation*/
+
+.navbar-nav{
+    font-family: Times New Roman, serif;
+}
+.nav-link:hover{
+  border: 3px dashed #ffc904; /* purple dashed border */
+  border-radius: 8px;         /* rounded corners */
+}
+.divoneimg{
+  width: 250px;
+  height: 150px;
+}
+
+.request-call{
+font-family: Times New Roman, serif;
+
+transition: transform 0.3s ease;
+}
+
+.request-call:hover {
+  transform: scale(1.1);
+}
+
+/*.............*/
+
+/*.............*/
+
+/* Style for background*/
+#topscrollItem{
+  
+ opacity: 1;
+    transition: opacity 0.5s ease;
+  }
+
+  #topscrollItem.visible {
+    opacity: 0;
+  }
+
+  .img-fluid.mt-extra{
+  margin-top:-5rem;
+
+}
+
+
+.img-fluid.ms-extra{
+  margin-left:5rem;
+
+}
+.top-text{
+    font-family: Times New Roman, serif;
+  font-weight: bold;
+
+}
+
+.top-text.mt-extra{
+  margin-top:-10rem;
+}
+.top-text.ms-extra{
+  margin-left:-1.5rem;
+}
+
+.top-textsecd{
+  font-size:18px;
+
+}
+
+.top-textsecd.ms-extra{
+  margin-left:-1.5rem;
+}
+.top-btn{
+transition: transform 0.3s ease;
+}
+
+.top-btn:hover {
+  transform: scale(1.1);
+}
+.top-btn.ms-extra{
+    margin-left:-1.5rem;
+
+}
+/*.............*/
+
+
+/*.............*/
+
+
+/* Style for services card*/
+
+.services-container {
+width: 100%;
+height:2500px;
+background-color: #000000;
+}
+
+.services-headingone.pt-extra {
+    padding-top: 8rem; /* or 10rem, 200px, anything you want */
+    padding-left: 10rem;
+}
+
+.services-headingtwo.pt-extra {
+    padding-top: 5rem; /* or 10rem, 200px, anything you want */
+    padding-left: 10rem;
+}
+
+.services-headingthree.pt-extra {
+    padding-top: 1rem; /* or 10rem, 200px, anything you want */
+}
+.services-headingthree.ps-extra {
+    padding-left: 10rem;
+}
+
+.card-serviceitemcontainer:hover {
+  
+  transform: scale(1.05);
+
+}
+
+.card-serviceitemone:hover {
+  background-color: #fce791;
+  color: #000000;
+
+}
+
+
+
+
+.services-cardall {
+    display: flex;
+  flex-direction: row;   /* stack cards vertically */
+  gap: 150px;                /* spacing between cards */
+  flex-wrap: wrap;       /* allow wrapping to next line */
+}
+.services-cardall.mt-extra ,.services-cardall.ms-extra{
+margin-top:1rem;
+margin-left:9rem;
+
+
+}
+.image-cardservice{
+  width:50px;
+  height:190px;
+}
+
+
+.category-serviceone{
+    font-family: Times New Roman, serif;
+
+
+
+}
+.category-serviceone.ps-extra{
+  padding-left:4.1rem;
+}
+
+.category-servicetw{
+    font-family: Times New Roman, serif;
+
+}
+
+.category-servicetw.ps-extra{
+  padding-left:5.8rem;
+}
+
+.category-servicethre{
+    font-family: Times New Roman, serif;
+
+}
+
+.category-servicethre.ps-extra{
+  padding-left:3.8rem;
+
+}
+
+.category-service.ps-extra{
+  padding-left:2.7rem;
+}
+.card-servicetext{
+    font-family: Times New Roman, serif;
+
+}
+
+.category-servicefur{
+    font-family: Times New Roman, serif;
+
+}
+
+.category-servicefur.ps-extra{
+    padding-left:5rem;
+
+}
+
+.category-servicefiv{
+    font-family: Times New Roman, serif;
+
+}
+
+.category-servicefiv.ps-extra{
+    padding-left:3.5rem;
+
+}
+
+.category-servicesix{
+    font-family: Times New Roman, serif;
+
+}
+
+.category-servicesix.ps-extra{
+    padding-left:5.8rem;
+
+}
+
+.category-servicesev{
+    font-family: Times New Roman, serif;
+
+}
+
+.category-servicesev.ps-extra{
+    padding-left:3.9rem;
+
+}
+
+.category-serviceeig{
+    font-family: Times New Roman, serif;
+
+}
+
+.category-serviceeig.ps-extra{
+    padding-left:5rem;
+
+}
+
+
+.category-servicenin{
+    font-family: Times New Roman, serif;
+
+}
+
+.category-servicenin.ps-extra{
+    padding-left:0.4rem;
+
+}
+.category-serviceten{
+    font-family: Times New Roman, serif;
+
+}
+
+.category-serviceten.ps-extra{
+    padding-left:5.7rem;
+
+}
+
+
+/*for x direction animation*/
+#services-cardonex,#services-cardtwx,#services-cardthrex,#services-cardfurx{
+  opacity: 0;
+  transform: translateX(-100px); /* start shifted to the left */
+  transition: opacity 0.5s ease, transform 2s ease;
+}
+
+#services-cardonex.visible,#services-cardtwx.visible,#services-cardthrex.visible,#services-cardfurx.visible{
+  opacity: 1;
+  transform: translateX(0); /* move to center */
+}
+
+/*for center direction animation*/
+
+
+#services-cardonecen,#services-cardtwcen,#services-cardthrecen,#services-cardfurcen{
+  opacity: 0;
+  transition: opacity 2s ease;
+}
+
+#services-cardonecen.visible,#services-cardtwcen.visible,#services-cardthrecen.visible,#services-cardfurcen.visible{
+  opacity: 1;
+}
+
+
+/*for y direction animation*/
+#services-cardonexpos,#services-cardtwxpos,#services-cardthrexpos,#services-cardfurxpos{
+  opacity: 0;
+  transform: translateX(100px); /* start shifted to the left */
+  transition: opacity 0.5s ease, transform 2s ease;
+}
+
+#services-cardonexpos.visible,#services-cardtwxpos.visible,#services-cardthrexpos.visible,#services-cardfurxpos.visible{
+  opacity: 1;
+  transform: translateX(0); /* move to center */
+}
+
+/*.................*/
+
+
+/*.................*/
+
+/* Style for userview*/
+.card-bodyuser{
+    background-color: rgba(171, 171, 171, 0.354);
+}
+
+@keyframes slideRightToLeft {
+  0%   { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
+}
+
+.slide-track {
+  animation: slideRightToLeft 15s linear infinite;
+  
+}
+.heading-user{
+    padding-left:35rem;
+}
+.cards-userimg {
+  width: 50px;       /* set fixed size */
+  height: 50px;      /* same width & height */
+  border-radius:50px; /* makes it circular */
+  
+}
+.card-title.mt-extra,.card-title.ms-extra{
+    margin-top:-3.5rem;
+    margin-left:5rem;
+}
+.card-text.ms-extra{
+    margin-left:5rem;
+
+}
+
+.cardstar{
+    width:150px;
+    height: 50px;
+
+}
+.cardstar.mt-extra{
+    margin-top:-2rem;
+}
+
+.heading-usertext{
+    font-family:Arial, Helvetica, sans-serif;
+}
+.heading-nametext{
+    font-family: Times New Roman, serif;
+
+}
+.heading-reviewtext{
+   font-family: Times New Roman, serif;
+   font-weight:bold;
+
+}
+/*.................*/
+
+
+/*.................*/
+
+/*for choose us*/
+
+
+.chooseus-top{
+    background-color: #0582ff;
+    width:80%;
+    height:1000px;
+    
+  border: 2px solid #ffc037;   /* blue border */
+  border-radius: 40px;         /* rounded corners */
+  box-shadow: 0 4px 10px rgba(0,0,0,5); 
+
+}
+.chooseus-top.ms-extra,.chooseus-top.mt-extra{
+        margin-left:8rem;
+        margin-top:2rem;
+
+}
+.chooseus-top.mt-extra{
+        margin-left:9rem;
+
+}
+.image-first{
+    width:900px;
+    height:900px;
+
+}
+.image-first.ms-extra,.image-first.mt-extra{
+            margin-left:-25.9rem;
+            margin-top: -8rem;
+
+}
+.image-scd{
+    width:900px;
+    height:900px;
+
+}
+.image-scd.ms-extra,.image-scd.mt-extra{
+            margin-left:-2rem;
+            margin-top: -50rem;
+}
+.image-choose{
+    width:900px;
+    height:900px;
+
+}
+.image-choose.ms-extra,.image-choose.mt-extra{
+            margin-left:37.5rem;
+            margin-top: -70rem;
+}
+.heading-namech{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.heading-namech.ps-extra,.heading-namechoose.pt-extra{
+padding-top:5rem;
+padding-left:5rem;
+}
+
+.heading-namechtw{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.heading-namechtw.ps-extra,.headingtw-namechoose.pt-extra{
+padding-top:-4rem;
+padding-left:5rem;
+}
+
+.heading-paraghch{
+    font-family: Times New Roman, serif;
+}
+.heading-paraghch.ps-extra,.heading-paraghch.pt-extra{
+padding-top:-4rem;
+padding-left:4.8rem;
+}
+
+#choosescrollitem{
+  
+ opacity: 0;
+    transition: opacity 0.5s ease;
+  }
+
+  #choosescrollitem.visible {
+    opacity: 1;
+  }
+

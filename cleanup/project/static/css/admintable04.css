@@ -1,0 +1,56 @@
+
+.container-admintable{
+  background: rgba(0, 136, 255, 0.365);   /* Transparent white */
+  border-radius: 15px; 
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2); /* Depth shadow */
+  backdrop-filter: blur(50px);
+}
+
+.pagination-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+
+  position: fixed;        /* stays in place */
+  bottom: 1rem;           /* distance from bottom */
+  left: 50%;              /* center horizontally */
+  transform: translateX(-50%);
+  background: #fff;       /* optional: contrast background */
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  width:100%;
+}
+
+.container-btnpage {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  overflow-x: auto;       /* scroll if too many pages */
+  scrollbar-width: none;  /* Firefox */
+  width:75%;
+}
+
+.container-btnpage::-webkit-scrollbar {
+  display: none;          /* Chrome, Safari */
+}
+
+.btn.btn-page {
+  min-width: 50px;
+  height: 50px;
+  border-radius: 15px;
+  transition: transform 0.3s;
+}
+
+.btn.btn-page:hover {
+  background-color: orange;
+  color: #fff;
+  transform: scale(1.1);
+}
+
+.btn.btn-page.active {
+  background-color: orange;
+  color: #fff;
+}
+

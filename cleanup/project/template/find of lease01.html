@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="en">
+  <head>
+        {% load static %}
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>website</title>
+    <link href={% static 'css\home26.css' %} rel="stylesheet" >
+    <link href={% static 'css\residential04.css' %} rel="stylesheet" >
+    <link href={% static 'css\bond04.css' %} rel="stylesheet" >
+
+
+    
+    <script src="{% static 'js/homescroll04.js' %}" ></script>
+    <script src="{% static 'js/residential02.js' %}" ></script>
+    <script src="{% static 'js/callus01.js' %}" defer ></script>
+
+{% load static %}
+<style>
+.bond-carpetimg {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: top;
+  -webkit-mask-image: url("{% static 'img/splashbold.png' %}");
+
+  -webkit-mask-size:85%; /* start small */
+  transition: -webkit-mask-position 0.1s ease-in-out; /* smooth animation */
+    -webkit-mask-repeat: no-repeat;
+  transition: -webkit-mask-position 0.1s ease-in-out; /* smooth animation */
+}
+
+.bond-carpetimg:hover {
+  -webkit-mask-size: 150%;             /* zoom in */}
+</style>
+
+<script
+  src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.8.5/dist/dotlottie-wc.js"
+  type="module"
+></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<!--boostrap file -->
+<!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Bootstrap JS Bundle (includes Popper) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+
+  </head>
+
+
+
+<body class="background">
+      <div class="container-fluid  container-background">
+
+<!--Top navigation -->
+<header>
+
+<nav class="navbar navbar-expand-lg   px-4">
+    <a class="navbar-brand ms-5 fs-1" href="{% url 'home' %}"><img class="divoneimg" src="{% static "img/Vacate Cleaners Offical Logo.png"%}" alt="Logo"></a>
+
+      <div class="container-fluid">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse " id="navbarSupportedContent">
+      <ul class="navbar-nav m-auto me-5 mb-2 fs-5 text-center">
+        
+</li>
+    </div>
+  </div>
+</nav>
+<!--         -->
+
+<!--section of bond-->
+<section class="py-0.1 bond-section">
+  <div class="container">
+    <div class="row align-items-center">
+      
+      <!-- Left: Image -->
+      <div class="col-lg-6 mb-4 mb-lg-0">
+        <img 
+          src="{% static "img/leasecleaning.jpg" %}"
+          class="img-fluid bond-carpetimg"
+          alt="Bond Cleaning Service">
+      </div>
+
+      <!-- Right: Content -->
+      <div class="col-lg-6">
+        <span class="badge bg-warning text-dark mb-3">End Of Lease Cleaning</span>
+        <h2 class="fw-bold mb-3">Complete End-of-Lease Cleaning</h2>
+        <p class="text-muted mb-4">
+Comprehensive move-out cleaning service ensuring property return in pristine condition. Guaranteed agent approval.
+</p>
+
+
+        <a href="{% url 'home' %}" class="btn btn-primary mt-3">Book Now</a>
+      </div>
+    </div>
+  </div>
+</section>
+<br>
+
+<!--                     -->
+
+
+<!--section of view company and css is use ot bond01.css file-->
+<section class="py-0.1 bond-section">
+  <div class="container w-100 container-promise">
+    <div class="row align-items-center">
+      
+
+      <!-- Right: Content -->
+      <div class="col-lg-6 ps-4">
+        <h2 class="fw-bold fs-7 mb-3 text-primary">What We Provide as <span class="text-white"> Professional Company</span></h2>
+        <p class="text-muted mb-4">
+As a professional cleaning company, our End of Lease Cleaning service is designed to take the stress out of moving and ensure your property meets the strict standards required by real estate agents and property managers. We deliver a complete, top-to-bottom clean that restores your home to the highest condition for a smooth and successful final inspection.
+
+Our trained team follows a detailed checklist that covers every room, surface, and hidden area to ensure nothing is missed. From deep-cleaning kitchens and bathrooms to spot-cleaning walls, dusting skirting boards, wiping cupboards, cleaning light fittings, vacuuming carpets, sanitizing surfaces, and leaving windows streak-free, we take care of it all.
+
+      </div>
+      <!-- Left: Image -->
+      <div class="col-lg-6 mb-4 mb-lg-0 ">
+        <img 
+          src="{% static "img/endclean01.jpg" %}"
+          class="img-fluid w-50 h-50 ms-extra bond-promiseup "
+          alt="Bond Cleaning Service"><br>
+
+          <img 
+          src="{% static "img/endclean02.jpg" %}"
+          class="img-fluid mt-4 w-50 h-50 ms-extra bond-promisedwn"
+          alt="Bond Cleaning Service">
+
+      </div>
+
+
+
+    </div>
+  </div>
+</section>
+<br>
+
+<!--                     -->
+
+
+<!--section choose us.All css is import from residential file css -->
+<section class="bg-light" id="all-chooseus">
+
+    <div class="container">
+        <div class="text-center mb-5">
+            <h2 class="fw-bold">Professional Cleaning Valencia</h2>
+            <p class="text-muted">Why customers choose us</p>
+        </div>
+
+        <div class="row g-4">
+
+            <!-- Feature -->
+            <div class="col-md-4" >
+                <div class="p-4  border rounded shadow-sm text-center h-100"id="item-chooseus">
+                    <h5 class="fw-bold mb-2">All Rooms Cleaning</h5>
+                    <p class="text-muted">Complete dusting & deep cleaning of every room.</p>
+                </div>
+            </div>
+
+            <!-- Feature -->
+            <div class="col-md-4" >
+                <div class="p-4  border rounded shadow-sm text-center h-100" id="item-chooseus">
+                    <h5 class="fw-bold mb-2">Carpet Care</h5>
+                    <p class="text-muted">Professional vacuuming & steam cleaning.</p>
+                </div>
+            </div>
+
+            <!-- Feature -->
+            <div class="col-md-4" >
+                <div class="p-4  border rounded shadow-sm text-center h-100" id="item-chooseus">
+                    <h5 class="fw-bold mb-2">Kitchen Detail</h5>
+                    <p class="text-muted">Oven, rangehood, stovetop & full kitchen clean.</p>
+                </div>
+            </div>
+
+            <!-- Feature -->
+            <div class="col-md-4" >
+                <div class="p-4  border rounded shadow-sm text-center h-100" id="item-chooseus">
+                    <h5 class="fw-bold mb-2">Bathroom Cleaning</h5>
+                    <p class="text-muted">Shower, tiles, mirrors & deep sanitation.</p>
+                </div>
+            </div>
+
+            <!-- Feature -->
+            <div class="col-md-4" >
+                <div class="p-4  border rounded shadow-sm text-center h-100" id="item-chooseus">
+                    <h5 class="fw-bold mb-2">Windows & Tracks</h5>
+                    <p class="text-muted">Windows, frames, tracks, and glass shining.</p>
+                </div>
+            </div>
+
+            <!-- Feature -->
+            <div class="col-md-4" >
+                <div class="p-4  border rounded shadow-sm text-center h-100" id="item-chooseus">
+                    <h5 class="fw-bold mb-2">Balcony & Garage</h5>
+                    <p class="text-muted">Balcony sweeping, garage cleaning & extras.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+  </section>
+
+<!--           -->
+  <!--for call us section-->
+<section id="callus">
+<div class="alertopen" id="alertpopup">
+    <div class="icon"></div>
+    <i class="fa fa-phone"></i>
+    <span>Please call us !!!!</span>
+</div>
+</section>
+<!--   -->
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.min.js" integrity="sha384-7qAoOXltbVP82dhxHAUje59V5r2YsVfBafyUDxEdApLPmcdhBPg1DKg1ERo0BZlK" crossorigin="anonymous"></script>
+
+</body>
+</html>

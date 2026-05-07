@@ -1,0 +1,57 @@
+/* General page styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Product section */
+section {
+  background: #fff;
+  padding: 20px 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  text-align: center;
+  max-width: 400px;
+}
+
+/* Product image */
+.product img {
+  max-width: 100%;
+  border-radius: 6px;
+  margin-bottom: 15px;
+}
+
+/* Product description */
+.description h3 {
+  margin: 0;
+  font-size: 1.4em;
+  color: #333;
+}
+
+.description h5 {
+  margin: 8px 0;
+  font-size: 1.2em;
+  color: #666;
+}
+
+/* Checkout button */
+button {
+  background-color: #6772e5;
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  font-size: 1em;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #5469d4;
+}

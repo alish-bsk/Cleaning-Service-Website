@@ -1,0 +1,7 @@
+
+.container-admintable{
+  background: rgba(0, 136, 255, 0.365);   /* Transparent white */
+  border-radius: 15px; 
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2); /* Depth shadow */
+  backdrop-filter: blur(50px);
+}

@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="en">
+  <head>
+        {% load static %}
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>website</title>
+   <link href={% static 'css\home40.css' %} rel="stylesheet"     >
+    <link href={% static 'css\residential04.css' %} rel="stylesheet" >
+
+    <script src="{% static 'js/login01.js' %}" defer ></script>
+    <script src="{% static 'js/homescroll04.js' %}" ></script>
+    <script src="{% static 'js/residential02.js' %}"></script>
+    <script src="{% static 'js/callus01.js' %}" defer ></script>
+
+
+
+<script
+  src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.8.5/dist/dotlottie-wc.js"
+  type="module"
+></script>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+
+<!--boostrap file -->
+<!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Bootstrap JS Bundle (includes Popper) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+
+  </head>
+
+
+
+<body class="background">
+
+<!--Top navigation -->
+<header>
+        
+
+<nav class="navbar navbar-expand-lg   px-4">
+    <a class="navbar-brand ms-5 fs-1" href="{% url 'home' %}"><img class="divoneimg" src="{% static "img/Vacate Cleaners Offical Logo.png"%}" alt="Logo"></a>
+
+      <div class="container-fluid">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse " id="navbarSupportedContent">
+      <ul class="navbar-nav m-auto me-5 mb-2 fs-5 text-center">
+        
+</li>
+         
+    </ul>
+    </div>
+  </div>
+</nav>
+
+</header>
+<!--image section for top -->
+<section id="imgsectiontop" id="residental-head">
+<div class="container mt-extra ms-extra container-imgtop">
+    <div class="col-md-4 ">
+      <img src={% static "img/womanfront.jpg" %} class="img-frontop " alt="womanfront image">
+    </div>
+   
+  </div>
+
+<!--     -->
+
+<!--container for some text-->
+<div class="container py-5 container-residential">
+    <div class="row align-items-center">
+
+        <!-- Images Column -->
+        <div class="col-lg-6">
+
+            <div class="row g-3">
+
+
+                <!-- Image 1 -->
+                <div class="col-md-4" id="hand-imge">
+                    <img src="{% static 'img/hand.jpg' %}" 
+                         class="img-fluid mt-extra ms-extra imghand" 
+                         alt="hand image" >
+                </div>
+
+                <!-- Image 2 -->
+                <div class="col-md-4   container-girlside" id="girl-imge">
+                    <img src="{% static 'img/resgirltw.jpg' %}" 
+                         class="img-fluid mt-extra ms-extra imggirl" 
+                         alt="girl image">
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Text Column -->
+        <div class="col-lg-6 mt-4 mt-lg-0 mt-extra ms-extra text-res">
+            <h2 class="fw-bold mb-4">House Cleaning Valencia</h2>
+
+            <p class="mb-3">
+                The room dimensions are not the main concern for us. We clean everything and everywhere – flats, apartments, houses. We remove dust and dirt from both visible and hard-to-reach places.
+            </p>
+
+            <p class="mb-3">
+                Don’t waste your time and energy cleaning your house. That’s enough! You have one life! Live it!
+            </p>
+
+            <p class="mb-4">
+                We will not only clean your home, villa or flat but also enable you to dedicate your time to your favorite things, your family or work.
+                You choose the days, times and duration of cleaning, and our cleaners clean at a time that is strictly scheduled and convenient for you.
+            </p>
+
+            <a href="{% url 'home' %}" class="btn btn-primary btn-lg me-2">Book Now</a>
+        </div>
+
+    </div>
+</div>
+</section>
+<!--                         -->
+<br>
+
+<!--section choose us. -->
+
+<section class="bg-light" id="all-chooseus">
+
+    <div class="container">
+        <div class="text-center mb-5">
+            <h2 class="fw-bold">Professional Cleaning Valencia</h2>
+            <p class="text-muted">Why customers choose us</p>
+        </div>
+
+        <div class="row g-4">
+
+            <!-- Feature -->
+            <div class="col-md-4" >
+                <div class="p-4  border rounded shadow-sm text-center h-100"id="item-chooseus">
+                    <h5 class="fw-bold mb-2">Flexible Schedule</h5>
+                    <p class="text-muted">Cleaning services adapted to your preferred days and hours.</p>
+                </div>
+            </div>
+
+            <!-- Feature -->
+            <div class="col-md-4" >
+                <div class="p-4  border rounded shadow-sm text-center h-100" id="item-chooseus">
+                    <h5 class="fw-bold mb-2">Professional Staff</h5>
+                    <p class="text-muted">Trained specialists ensuring high-quality results.</p>
+                </div>
+            </div>
+
+            <!-- Feature -->
+            <div class="col-md-4" >
+                <div class="p-4  border rounded shadow-sm text-center h-100" id="item-chooseus">
+                    <h5 class="fw-bold mb-2">Excellent Prices</h5>
+                    <p class="text-muted">Affordable rates with no hidden fees.</p>
+                </div>
+            </div>
+
+            <!-- Feature -->
+            <div class="col-md-4" >
+                <div class="p-4  border rounded shadow-sm text-center h-100" id="item-chooseus">
+                    <h5 class="fw-bold mb-2">Individual Attention</h5>
+                    <p class="text-muted">We tailor our services based on your needs.</p>
+                </div>
+            </div>
+
+            <!-- Feature -->
+            <div class="col-md-4" >
+                <div class="p-4  border rounded shadow-sm text-center h-100" id="item-chooseus">
+                    <h5 class="fw-bold mb-2">Extensive Experience</h5>
+                    <p class="text-muted">Years of experience providing top-level cleaning.</p>
+                </div>
+            </div>
+
+            <!-- Feature -->
+            <div class="col-md-4" >
+                <div class="p-4  border rounded shadow-sm text-center h-100" id="item-chooseus">
+                    <h5 class="fw-bold mb-2">Best Value for Money</h5>
+                    <p class="text-muted">High quality service at the best possible price.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+  </section>
+
+
+<!--       -->
+
+
+<!--for call us section-->
+<section id="callus">
+<div class="alertopen" id="alertpopup">
+    <div class="icon"></div>
+    <i class="fa fa-phone"></i>
+    <span>Please call us !!!!</span>
+</div>
+</section>
+<!--   -->
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.min.js" integrity="sha384-7qAoOXltbVP82dhxHAUje59V5r2YsVfBafyUDxEdApLPmcdhBPg1DKg1ERo0BZlK" crossorigin="anonymous"></script>
+
+</body>
+</html>

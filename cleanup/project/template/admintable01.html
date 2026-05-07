@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="en">
+  <head>
+        {% load static %}
+
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>website</title>
+    <link href={% static 'css\home07.css' %} rel="stylesheet" >
+    <link href={% static 'css\admintable04.css' %} rel="stylesheet" >
+
+
+    
+    <script src="{% static 'js/homescroll04.js' %}" defer ></script>
+    <script src="{% static 'js/callus01.js' %}" defer ></script>
+
+
+
+<!--boostrap file -->
+<!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Bootstrap JS Bundle (includes Popper) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+
+  </head>
+
+
+
+<body class=" container-fluid background">
+<!--Top navigation -->
+<header>
+
+<nav class="navbar navbar-expand-lg   px-4">
+    <a class="navbar-brand ms-5 fs-1" href="{% url 'home' %}"><img class="divoneimg" src="{% static "img/Vacate Cleaners Offical Logo.png"%}" alt="Logo"></a>
+
+      <div class="container-fluid">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse " id="navbarSupportedContent">
+      <ul class="navbar-nav m-auto me-5 mb-2 fs-5 text-center">
+        
+</li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!--         -->
+
+<section id="admin-table">
+
+
+<div class="container-fluid col-12 w-100 h-extra border border-3 border-warning mt-extra container-admintable">
+  
+  <div class="row">
+<div class="col-12 ">
+  <p class=" col-12 h1 mt-3 text-center">Administrator Table<p>
+</div>
+
+<table class="table table-bordered  border-dark">
+  <tr>
+  <div class="col-1"><th>Id</th></div>
+  <div class="col-1"><th>Full Name</th></div>
+  <div class="col-1"><th>Company Name</th></div>
+    <div class="col-1"><th>Date</th></div>
+  <div class="col-1"><th>Time</th></div>
+  <div class="col-1"><th>Residential services</th></div>
+  <div class="col-1"><th>Bond services</th></div>
+  <div class="col-1"><th>End of lease services</th></div>
+  <div class="col-1"><th>Vacate services</th></div>
+  <div class="col-1"><th>Move out services</th></div>
+  <div class="col-1"><th>Exit services</th></div>
+  <div class="col-1"><th>Move in services</th></div>
+  <div class="col-1"><th>Rental services</th></div>
+  <div class="col-1"><th>Commercial & Industrial services</th></div>
+  <div class="col-1"><th>Oven services</th></div>
+  <div class="col-1"><th>Total price</th></div>
+  <div class="col-1"><th>Start</th></div>
+  <div class="col-1"><th>Finsih</th></div>
+  <div class="col-1"><th>Remove</th></div>
+  
+    </tr>
+{% for i in page %}
+
+  <tr>
+  <div class="col-1 id"><td>{{i.book_id}}</td></div>
+  {% if i.middle_name == None %}
+   <div class="col-1 name"><td>{{ i.first_name }}  {{ i.last_name }}</td></div>
+   {%else%}
+
+      <div class="col-1 name"><td>{{ i.first_name }} {{ i.middle_name }} {{ i.last_name }}</td></div>
+{%endif%}
+    <div class="col-1 companyname"><td>{{ i.company_name }}</td></div>
+      <div class="col-1 date"><td>{{ i.date }}</td></div>
+  <div class="col-1 time"><td>{{ i.time }}</td></div>
+
+{% for service in userdata %}
+{% for value in service %}
+
+{% if value.id == i.book_id %}
+    <div class="col-1 residentialservices"><td>$ {{value.price }}</td></div>
+
+
+      {%endif%}
+
+
+
+
+
+{%endfor%}
+{%endfor%}
+
+{%for item in total%}
+{%for totalvalue in item%}
+{% if totalvalue.id == i.book_id %}
+
+  <div class="col-1 totalprice"><td>$ {{totalvalue.total}}</td></div>
+        {%endif%}
+
+  {%endfor%}
+    {%endfor%}
+
+
+{% if i.start == 'No' %}
+      <form action="{% url 'admintable' %}" method="POST" enctype="multipart/form-data">
+            {% csrf_token %}
+
+
+  <div class="col-1 start"><td><button type="submit" class="btn border border-1 border-dark bg-warning" name="start" value="{{i.book_id}}" >Start</button></td></div>
+      </form>
+{% else %}
+      <form action="{% url 'admintable' %}" method="POST" enctype="multipart/form-data">
+            {% csrf_token %}
+
+    <div class="col-1 start"><td><button type="submit" class="btn border border-1 border-dark bg-success" name="start" value="{{i.book_id}}"  >Start</button></td></div>
+      </form>
+
+
+{%endif%}
+
+{% if i.finish == 'No' %}
+      <form action="{% url 'admintable' %}" method="POST" enctype="multipart/form-data">
+            {% csrf_token %}
+
+
+  <div class="col-1 finsih"><td><button class="btn border border-1 border-dark bg-warning" name="finish " value="{{i.book_id}}">Finsih</button></td></div>
+      </form>
+
+  {% else %}
+      <form action="{% url 'admintable' %}" method="POST" enctype="multipart/form-data">
+            {% csrf_token %}
+
+    <div class="col-1 finsih"><td><button class="btn border border-1 border-dark bg-danger" name="finish " value="{{i.book_id}}">Finsih</button></td></div>
+      </form>
+
+{%endif%}
+
+      <form action="{% url 'admintable' %}" method="POST" enctype="multipart/form-data">
+            {% csrf_token %}
+
+
+  <div class="col-1 remove"><td><button class="btn border border-1 border-dark bg-warning" name="remove" value="{{i.book_id}}">Remove</button></td></div>
+
+      </form>
+
+    </tr>
+    {%endfor%}
+
+
+
+
+</table>
+</section>
+<!-- for section page number -->
+<section id="pagenumner">
+  <div class="pagination-wrapper mt-5">
+
+
+    <!-- Previous button -->
+    <button class="carousel-control-prev ms-extra container-scrollbtn" type="button">
+      <span class="carousel-control-prev-icon bg-black"></span>
+    </button>
+
+   
+
+    <!-- Scrollable page numbers container -->
+    <div class="container-btnpage ms-extra">
+      {% for num in pagenum %}
+      <form action="{% url 'admintable' %}" method="POST" enctype="multipart/form-data">
+            {% csrf_token %}
+
+        <button class="btn btn-primary btn-page " name="page" value="{{ num }}"  >
+          {{ num }}
+        </button>
+      </form>
+      {% endfor %}
+    </div>
+
+     <!-- Next button -->
+    <button class="carousel-control-next mt-extra container-scrollbtn" type="button">
+      <span class="carousel-control-next-icon bg-black"></span>
+    </button>
+
+    
+
+  </div><br>
+</section>
+<script>
+(function() {
+    // Make sure DOM exists
+    const scrollContainer = document.querySelector(".container-btnpage");
+    const prevBtn = document.querySelector(".carousel-control-prev");
+    const nextBtn = document.querySelector(".carousel-control-next");
+
+    if (!scrollContainer || !prevBtn || !nextBtn) {
+        console.error("Scroll container or buttons not found!");
+        return;
+    }
+
+    prevBtn.addEventListener("click", function() {
+        scrollContainer.scrollBy({ left: -200, behavior: "smooth" });
+    });
+
+    nextBtn.addEventListener("click", function() {
+        scrollContainer.scrollBy({ left: 200, behavior: "smooth" });
+    });
+})();
+</script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.min.js" integrity="sha384-7qAoOXltbVP82dhxHAUje59V5r2YsVfBafyUDxEdApLPmcdhBPg1DKg1ERo0BZlK" crossorigin="anonymous"></script>
+
+</body>
+</html>
